@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coderr/</title>
+    <link rel="icon" type="image/png" href="./assets/logo/favicon.png" />
+
+    <link rel="stylesheet" href="./shared/styles/variables.css">
+    <link rel="stylesheet" href="./shared/styles/standard.css">
+    <link rel="stylesheet" href="./shared/styles/form.css">
+    <link rel="stylesheet" href="./shared/styles/assets.css">
+    <link rel="stylesheet" href="./shared/styles/fonts.css">
+    <link rel="stylesheet" href="./shared/styles/header_footer.css">
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <script src="./shared/scripts/redirect.js"></script>
+    <script src="./shared/scripts/ui_helper.js"></script>
+    
+    
+    <script src="./shared/scripts/config.js"></script>
+    <script src="./shared/scripts/auth.js"></script>
+    <script src="./shared/scripts/api.js"></script>
+    <script src="./shared/scripts/user_crud.js"></script>
+    <script src="./shared/scripts/template/header_template.js"></script>
+    <script src="./shared/scripts/header.js"></script>
+</head>
+
+<body onload="setHeader()" onclick="closeAllOpenedElements()">
+    <header class="main_header">
+
+        <a class="logo" href="./index.html">
+            <img src="./assets/logo/logo_coderr.svg" alt="" srcset="">
+        </a>
+
+        <div id="head_content_right" class="d_flex_cc_gm head_content_right"></div>
+    </header>
+
+    <main>
+        <section class="d_flex_cc_gl f_d_c">
+            <h1 class="font_prime_color">Datenschutz</h1>
+            <h2>Verantwortlicher</h2>
+            <p>
+                Eugen Birich<br>
+                Mittlauer Weg 36<br>
+                63571 Gelnhausen<br>
+                E-Mail: <a class="link" href="mailto:info@birich.de">info@birich.de</a>
+            </p>
+
+            <h2>Arten der verarbeiteten Daten</h2>
+            <ul>
+                <li>Bestandsdaten (z. B. Name, Adresse, Kontakt)</li>
+                <li>Zugangsdaten (z. B. Login, Passworthash)</li>
+                <li>Inhaltsdaten (z. B. Profile, Angebote, Bewertungen)</li>
+                <li>Vertrags- und Zahlungsdaten (falls Bestellungen/Zahlungen erfolgen)</li>
+                <li>Nutzungsdaten (z. B. besuchte Seiten, Interaktionen)</li>
+                <li>Meta-/Kommunikationsdaten (z. B. IP-Adresse, Gerät, Browser)</li>
+            </ul>
+
+            <h2>Zwecke der Verarbeitung und Rechtsgrundlagen</h2>
+            <ul>
+                <li>Bereitstellung des Angebots und Erfüllung vertraglicher Pflichten (Art. 6 Abs. 1 lit. b DSGVO)</li>
+                <li>Registrierung, Login und Kontoverwaltung (Art. 6 Abs. 1 lit. b DSGVO)</li>
+                <li>Kommunikation und Support bei Anfragen (Art. 6 Abs. 1 lit. b, f DSGVO)</li>
+                <li>Sicherheits- und Missbrauchsprävention, Fehleranalyse (Art. 6 Abs. 1 lit. f DSGVO)</li>
+                <li>Einwilligungsbasierte Funktionen (z. B. optionale Cookies) (Art. 6 Abs. 1 lit. a DSGVO)</li>
+                <li>Erfüllung gesetzlicher Pflichten (Art. 6 Abs. 1 lit. c DSGVO)</li>
+            </ul>
+
+            <h2>Server-Logfiles</h2>
+            <p>
+                Beim Aufruf unserer Seiten können der Name der aufgerufenen Seite, Datum und Uhrzeit, übertragene Datenmenge,
+                Meldungen über erfolgreichen Abruf, Browsertyp sowie die IP-Adresse vorübergehend protokolliert werden.
+                Die Speicherung erfolgt aus Sicherheits- und technischen Gründen und wird regelmäßig gelöscht.
+            </p>
+
+            <h2>Cookies und lokale Speicherung</h2>
+            <p>
+                Wir verwenden technisch notwendige Cookies sowie lokale Speicherverfahren (LocalStorage/SessionStorage),
+                z. B. zur Speicherung von Sitzungsinformationen, Einstellungen und zur Authentifizierung.
+                Optional eingesetzte Cookies werden nur mit Ihrer Einwilligung verwendet.
+            </p>
+
+            <h2>Registrierung und Login</h2>
+            <p>
+                Für die Nutzung persönlicher Funktionen ist eine Registrierung erforderlich. Dabei verarbeiten wir die angegebenen
+                Daten (z. B. Name, E-Mail) zum Zweck der Kontoverwaltung und Authentifizierung. Passwörter werden ausschließlich
+                als Hash gespeichert. Konten können jederzeit gelöscht werden; gesetzliche Aufbewahrungsfristen bleiben unberührt.
+            </p>
+
+            <h2>Profile, Angebote, Bestellungen und Bewertungen</h2>
+            <p>
+                Im Rahmen der Nutzung können Profilangaben, Angebote, Bestellungen und Bewertungen verarbeitet und angezeigt werden.
+                Diese Daten dienen der Erfüllung unseres Dienstes und der Darstellung innerhalb der Plattform.
+            </p>
+
+            <h2>Kontaktaufnahme</h2>
+            <p>
+                Bei der Kontaktaufnahme (z. B. per E-Mail) werden Ihre Angaben zur Bearbeitung der Anfrage und für mögliche Anschlussfragen
+                verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. f DSGVO.
+            </p>
+
+            <h2>Empfänger der Daten</h2>
+            <p>
+                Eine Weitergabe erfolgt nur, soweit dies zur Erfüllung unserer Leistungen erforderlich ist (z. B. technische Dienstleister/Hosting),
+                oder gesetzliche Pflichten bestehen. Mit Dienstleistern bestehen, soweit erforderlich, Vereinbarungen zur Auftragsverarbeitung.
+            </p>
+
+            <h2>Drittlandübermittlung</h2>
+            <p>
+                Eine Übermittlung in Drittländer findet grundsätzlich nicht statt, außer wenn dies zur Leistungserbringung erforderlich ist
+                oder Sie eingewilligt haben. In diesen Fällen stellen wir angemessene Garantien nach Art. 44 ff. DSGVO sicher.
+            </p>
+
+            <h2>Speicherdauer</h2>
+            <p>
+                Wir verarbeiten und speichern personenbezogene Daten nur so lange, wie es für die jeweiligen Zwecke erforderlich ist oder
+                gesetzliche Pflichten bestehen. Danach werden die Daten gelöscht oder anonymisiert.
+            </p>
+
+            <h2>Ihre Rechte</h2>
+            <ul>
+                <li>Auskunft (Art. 15 DSGVO)</li>
+                <li>Berichtigung (Art. 16 DSGVO)</li>
+                <li>Löschung (Art. 17 DSGVO)</li>
+                <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+                <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+                <li>Widerspruch (Art. 21 DSGVO)</li>
+                <li>Widerruf erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO)</li>
+                <li>Beschwerde bei einer Aufsichtsbehörde (Art. 77 DSGVO)</li>
+            </ul>
+
+            <h2>Sicherheit der Verarbeitung</h2>
+            <p>
+                Wir treffen technische und organisatorische Maßnahmen, um Ihre Daten vor Verlust, Zerstörung, Zugriff, Veränderung
+                und Verbreitung durch unbefugte Personen zu schützen. Dennoch kann eine absolute Sicherheit im Internet nicht gewährleistet werden.
+            </p>
+
+            <h2>Aktualität und Änderungen</h2>
+            <p>
+                Diese Datenschutzerklärung gilt ab dem 3. Februar 2026. Wir behalten uns vor, sie anzupassen, wenn sich
+                technische Änderungen oder rechtliche Vorgaben ergeben.
+            </p>
+
+            <h2>Kontakt für Datenschutzanfragen</h2>
+            <p>
+                Bei Fragen zur Verarbeitung Ihrer personenbezogenen Daten oder zur Ausübung Ihrer Rechte wenden Sie sich bitte an:
+                <a class="link" href="mailto:info@birich.de">info@birich.de</a>.
+            </p>
+
+        </section>
+    </main>
+    <footer class="main_footer pad_l">
+        <a class="logo" href="./index.html">
+            <img src="./assets/logo/logo_coderr_light.svg" alt="" srcset="">
+        </a>
+        <p>© 2024 Coderr. All rights reserved.</p>
+        <p>Entwickelt im Rahmen des Weiterbildungsprogramms der Developer Akademie GmbH.</p>
+        <div class="d_flex_cc_gm">
+            <a class="link" href="./imprint.html">Impressum</a>
+            <a class="link" href="./privacy_policy.html">Datenschutz</a>
+        </div>
+    </footer>
+</body>
+
+</html>
