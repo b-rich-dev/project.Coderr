@@ -1,0 +1,38 @@
+.legal_wrapper {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    @media only screen and (min-width: 1440px) {
+        padding-left: max(48px, calc(50% - 720px));
+        padding-right: max(48px, calc(50% - 720px));
+    }
+
+    & h2 {
+        margin-bottom: 12px;
+    }
+
+    & p {
+        margin-bottom: 24px;
+    }
+
+    & p+p {
+        margin-top: -16px;
+    }
+
+    & ul {
+        padding-left: 20px;
+        margin-bottom: 24px;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+
+    .legal_wrapper,
+    section>h1 {
+        align-self: flex-start;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
