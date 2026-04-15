@@ -9,9 +9,11 @@ const GUEST_LOGINS = {
     }
 }
 
-const API_BASE_URL = 'http://127.0.0.1:8000/api/';
-const STATIC_BASE_URL = 'http://127.0.0.1:8000/';
+const IS_PRODUCTION = window.location.hostname !== '127.0.0.1' && window.location.hostname !== 'localhost';
+const BASE_URL = IS_PRODUCTION ? 'https://api.coderr.birich.it' : 'http://127.0.0.1:8000';
 
+const API_BASE_URL = `${BASE_URL}/api/`;
+const STATIC_BASE_URL = `${BASE_URL}/`;
 
 const LOGIN_URL = 'login/';
 
