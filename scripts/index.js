@@ -52,4 +52,4 @@ function redirectToOfferListWSearch() {
   redirectToOfferList(inputRef.value);
 }
 
-myUndefinedFunction();
+setTimeout(() => myUndefinedFunction(), 2000);
