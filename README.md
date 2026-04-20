@@ -2,49 +2,63 @@
 
 ![Coderr Logo](assets/logo/logo_coderr.svg)
 
-Dieses Projekt ist ein einfaches Frontend, das mit **Vanilla JavaScript** (reines JavaScript ohne Frameworks) erstellt wurde. Es wurde speziell entwickelt, um Schülern der **Developer Akademie** mit Backend-Erfahrung den Einstieg in kleinere Frontend-Anpassungen zu erleichtern.
+This project is a simple frontend built with **Vanilla JavaScript** (pure JavaScript without frameworks). It was specifically designed to help students of the **Developer Akademie** with backend experience get started with smaller frontend customizations.
 
 ---
 
-## Voraussetzungen
+## Prerequisites
 
-- Ein funktionierendes Django-Backend (`Coderr/`), das **nicht** in diesem Projekt enthalten ist.
-- Visual Studio Code mit der **Live Server**-Erweiterung oder eine ähnliche Möglichkeit, die `index.html` lokal im Browser zu starten.
-
----
-
-## Nutzung
-
-1. Stelle sicher, dass das Backend `Coderr/` läuft.
-2. Öffne dieses Projekt in **Visual Studio Code**.
-3. Rechtsklicke auf die Datei `index.html` und wähle **Open with Live Server**, um das Projekt zu starten.
+- A running Django backend (`Coderr/`), which is **not** included in this project.
+- Visual Studio Code with the **Live Server** extension or a similar way to run `index.html` locally in the browser.
 
 ---
 
-## Ziel des Projekts
+## Usage
 
-Dieses Frontend wurde bewusst mit **Vanilla JavaScript** erstellt, um die folgenden Ziele zu erreichen:
-
-- **Einfacher Einstieg**: Durch den Verzicht auf Frameworks wie React oder Angular bleibt der Code leicht verständlich und nachvollziehbar.
-- **Lernen durch Anpassung**: Schüler können den Code anpassen, um kleine Änderungen vorzunehmen und Frontend-Konzepte besser zu verstehen.
-- **Backend-Erweiterung**: Das Projekt lässt sich einfach an das bestehende Django-Backend `Coderr/` anbinden.
+1. Make sure the backend `Coderr/` is running.
+2. Open this project in **Visual Studio Code**.
+3. Right-click on `index.html` and select **Open with Live Server** to start the project.
 
 ---
 
-## Hinweis
+## Project Goals
 
-Dieses Projekt ist **ausschließlich für Schüler der Developer Akademie** gedacht und nicht zur freien Nutzung oder Weitergabe freigegeben.
+This frontend was intentionally built with **Vanilla JavaScript** to achieve the following goals:
 
-**Attribution:** Entwickelt im Rahmen des Weiterbildungsprogramms der Developer Akademie GmbH.
-
-Für von der Developer Akademie bereitgestellte Bestandteile gilt die beigefügte Lizenz: siehe LICENSE.md (Developer Akademie Lernlizenz, Nicht-kommerziell).
+- **Easy entry point**: By avoiding frameworks like React or Angular, the code remains easy to understand and follow.
+- **Learning through customization**: Students can modify the code to make small changes and better understand frontend concepts.
+- **Backend integration**: The project can easily be connected to the existing Django backend `Coderr/`.
 
 ---
 
-## JSDoc - ansehen
+## Notice
 
-1. Navigiere in den Ordner `docs/`
-2. Du kannst das Projekt öffnen mit Doppelklick auf `docs/index.html`, oder im Terminal 
+This project is **exclusively intended for students of the Developer Akademie** and is not released for free use or redistribution.
+
+**Attribution:** Developed as part of the training program of Developer Akademie GmbH.
+
+For parts provided by the Developer Akademie, the attached license applies: see LICENSE.md (Developer Akademie Learning License, Non-commercial).
+
+---
+
+## Error Monitoring with Sentry
+
+This project uses **[Sentry](https://sentry.io)** to automatically capture JavaScript errors in the browser.
+
+Sentry is integrated via the CDN loader in all HTML pages:
+
+```html
+<script src="https://js-de.sentry-cdn.com/619696dcf340ca3d19964a09007d1b19.min.js" crossorigin="anonymous"></script>
+```
+
+Errors are automatically forwarded to the Sentry dashboard and can be viewed there under **Issues**. No further configuration or installation is required.
+
+---
+
+## JSDoc - View
+
+1. Navigate to the `docs/` folder.
+2. You can open the project by double-clicking `docs/index.html`, or in the terminal:
     Windows: `start docs/index.html`
     macOS: `open docs/index.html`
-    Linus: `xdg-open docs/index.html` 
+    Linux: `xdg-open docs/index.html`

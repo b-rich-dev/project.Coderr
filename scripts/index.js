@@ -51,5 +51,3 @@ function redirectToOfferListWSearch() {
   let inputRef = document.getElementById("index_search_field");
   redirectToOfferList(inputRef.value);
 }
-
-setTimeout(() => myUndefinedFunction(), 2000);
