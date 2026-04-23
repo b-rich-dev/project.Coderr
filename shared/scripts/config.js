@@ -10,7 +10,7 @@ const GUEST_LOGINS = {
 }
 
 const IS_PRODUCTION = window.location.hostname !== '127.0.0.1' && window.location.hostname !== 'localhost';
-const BASE_URL = IS_PRODUCTION ? 'https://api.coderr.birich.it' : 'http://127.0.0.1:8000';
+const BASE_URL = IS_PRODUCTION ? 'https://api.coderr.birich.dev' : 'http://127.0.0.1:8000';
 
 const API_BASE_URL = `${BASE_URL}/api/`;
 const STATIC_BASE_URL = `${BASE_URL}/`;
